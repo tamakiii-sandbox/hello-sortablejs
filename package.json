@@ -18,5 +18,8 @@
   "homepage": "https://github.com/tamakiii-sandbox/hello-sortablejs#readme",
   "dependencies": {
     "sortablejs": "^1.13.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
   }
 }
