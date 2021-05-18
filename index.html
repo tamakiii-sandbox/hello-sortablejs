@@ -2,13 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title data-react-helmet="true">http-server  -  npm</title>
+    <title data-react-helmet="true">tamakiii-sandbox/hello-sortable</title>
     <script type="module">
-      import Sortable from '/node_modules/sortablejs/modular/sortable.complete.esm.js';
+      import Sortable, { AutoScroll } from '/node_modules/sortablejs/modular/sortable.core.esm.js';
+      Sortable.mount(new AutoScroll);
+
+      window.addEventListener('DOMContentLoaded', (event) => {
+        const el = document.getElementById('items');
+        const sortable = Sortable.create(el);
+      });
     </script>
   </head>
   <body>
     <main id="app">
+      <ul id="items">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
     </main>
   </body>
 </html>
