@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tamakiii-sandbox/hello-sortablejs/issues"
   },
-  "homepage": "https://github.com/tamakiii-sandbox/hello-sortablejs#readme"
+  "homepage": "https://github.com/tamakiii-sandbox/hello-sortablejs#readme",
+  "dependencies": {
+    "sortablejs": "^1.13.0"
+  }
 }
